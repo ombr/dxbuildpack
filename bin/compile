@@ -4,6 +4,7 @@
 cd $(dirname $0)
 mkdir -p $1/.heroku
 cd $1/.heroku
-curl -s --retry 3 -L https://developer.salesforce.com/media/salesforce-cli/sfdx-v5.7.6-d42cf65-linux-amd64.tar.xz  | tar xJf -
+export URL=https://developer.salesforce.com/media/salesforce-cli/sfdx-v5.7.6-d42cf65-linux-amd64.tar.xz
+curl -s --retry 3 -L $URL | tar xJf -
 mv sfdx dx
 # echo "export PATH=/app/.heroku/php/bin:\$PATH:/app/$composer_bindir" > $bp_dir/export
