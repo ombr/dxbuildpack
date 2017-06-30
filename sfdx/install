@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -e
-DIR=/bin
+DIR=/usr/bin
 
 CURRENTDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 INSTALLPATH_SFDX=$DIR/sfdx
