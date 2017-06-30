@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
 
+cd $(dirname $0)
 mkdir -p $1/.heroku
-mv sfdx $1/.heroku/dx
+mv ../sfdx $1/.heroku/dx
 cd $1
 echo "Test ?"
 pwd
